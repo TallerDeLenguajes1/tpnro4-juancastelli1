@@ -35,7 +35,7 @@ namespace TP04
         }
         void mejorcadete()
         {
-            Cadete maxcadi = new Cadete(0, " ", " ", 0);
+            Cadete maxcadi = new Cadete(0, " ", " ", 0,Vehiculo.Bicicleta);
             foreach (Cadete cad in cadetes)
             {
                 if (cad.cantidadPedidosE() > maxcadi.cantidadPedidosE())

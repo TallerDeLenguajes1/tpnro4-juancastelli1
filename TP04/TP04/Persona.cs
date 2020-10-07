@@ -19,5 +19,10 @@ namespace TP04
         public string Direccion { get => direccion; set => direccion = value; }
         public int Telefono { get => telefono; set => telefono = value; }
 
+        public virtual int contarpedidos()
+        {
+            return 0;
+        }
+
     }
 }

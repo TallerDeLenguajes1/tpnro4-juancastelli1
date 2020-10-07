@@ -1,0 +1,13 @@
+C:\Users\Juan Castelli\Documents\Escritorio\Facultad\TallerDeLenguajes 2\TP\tpnro4-juancastelli1\TP04\TP04\obj\Debug\netcoreapp3.1\TP04.csprojAssemblyReference.cache
+C:\Users\Juan Castelli\Documents\Escritorio\Facultad\TallerDeLenguajes 2\TP\tpnro4-juancastelli1\TP04\TP04\obj\Debug\netcoreapp3.1\TP04.AssemblyInfoInputs.cache
+C:\Users\Juan Castelli\Documents\Escritorio\Facultad\TallerDeLenguajes 2\TP\tpnro4-juancastelli1\TP04\TP04\obj\Debug\netcoreapp3.1\TP04.AssemblyInfo.cs
+C:\Users\Juan Castelli\Documents\Escritorio\Facultad\TallerDeLenguajes 2\TP\tpnro4-juancastelli1\TP04\TP04\obj\Debug\netcoreapp3.1\TP04.csproj.CoreCompileInputs.cache
+C:\Users\Juan Castelli\Documents\Escritorio\Facultad\TallerDeLenguajes 2\TP\tpnro4-juancastelli1\TP04\TP04\bin\Debug\netcoreapp3.1\TP04.exe
+C:\Users\Juan Castelli\Documents\Escritorio\Facultad\TallerDeLenguajes 2\TP\tpnro4-juancastelli1\TP04\TP04\bin\Debug\netcoreapp3.1\TP04.deps.json
+C:\Users\Juan Castelli\Documents\Escritorio\Facultad\TallerDeLenguajes 2\TP\tpnro4-juancastelli1\TP04\TP04\bin\Debug\netcoreapp3.1\TP04.runtimeconfig.json
+C:\Users\Juan Castelli\Documents\Escritorio\Facultad\TallerDeLenguajes 2\TP\tpnro4-juancastelli1\TP04\TP04\bin\Debug\netcoreapp3.1\TP04.runtimeconfig.dev.json
+C:\Users\Juan Castelli\Documents\Escritorio\Facultad\TallerDeLenguajes 2\TP\tpnro4-juancastelli1\TP04\TP04\bin\Debug\netcoreapp3.1\TP04.dll
+C:\Users\Juan Castelli\Documents\Escritorio\Facultad\TallerDeLenguajes 2\TP\tpnro4-juancastelli1\TP04\TP04\bin\Debug\netcoreapp3.1\TP04.pdb
+C:\Users\Juan Castelli\Documents\Escritorio\Facultad\TallerDeLenguajes 2\TP\tpnro4-juancastelli1\TP04\TP04\obj\Debug\netcoreapp3.1\TP04.dll
+C:\Users\Juan Castelli\Documents\Escritorio\Facultad\TallerDeLenguajes 2\TP\tpnro4-juancastelli1\TP04\TP04\obj\Debug\netcoreapp3.1\TP04.pdb
+C:\Users\Juan Castelli\Documents\Escritorio\Facultad\TallerDeLenguajes 2\TP\tpnro4-juancastelli1\TP04\TP04\obj\Debug\netcoreapp3.1\TP04.genruntimeconfig.cache

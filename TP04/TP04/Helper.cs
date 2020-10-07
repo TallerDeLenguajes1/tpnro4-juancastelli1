@@ -14,6 +14,10 @@ namespace TP04
         {
             return rnd.Next(hasta);
         }
+        public static bool boolaleatorio()
+        {
+            return (rnd.Next(2)== 1);
+        }
         public static int aleatorio(int desde, int hasta)
         {
             return rnd.Next(desde, hasta);
@@ -31,7 +35,48 @@ namespace TP04
             List<Pedido> pedidos = new List<Pedido>();
             for (int l = 0; l < pednum; l++)
             {
-                Pedido ped = new Pedido(cont, " ", cont, Helper.nombrealeat(), " ", Helper.aleatorio(3810000000, 3819999999), (estado)Helper.aleatorio(4));
+                Cliente cli = new Cliente(cont, Helper.nombrealeat(), " ", Helper.aleatorio(3810000000, 3819999999));
+                Pedido ped = new Pedido(cont, " ", cli, (estado)Helper.aleatorio(4), (tipoped)Helper.aleatorio(3), Helper.boolaleatorio());
+                cli.Pedidos.Add(ped);
+                pedidos.Add(ped);
+                cont = cont + 1;
+            }
+            return pedidos;
+        }
+        public static List<Pedido> CrearPedidosEco(int pednum, int cont)
+        {
+            List<Pedido> pedidos = new List<Pedido>();
+            for (int l = 0; l < pednum; l++)
+            {
+                Cliente cli = new Cliente(cont, Helper.nombrealeat(), " ", Helper.aleatorio(3810000000, 3819999999));
+                Pedido ped = new Pedido(cont, " ", cli, (estado)Helper.aleatorio(4), tipoped.Ecologico, Helper.boolaleatorio());
+                cli.Pedidos.Add(ped);
+                pedidos.Add(ped);
+                cont = cont + 1;
+            }
+            return pedidos;
+        }
+        public static List<Pedido> CrearPedidosExp(int pednum, int cont)
+        {
+            List<Pedido> pedidos = new List<Pedido>();
+            for (int l = 0; l < pednum; l++)
+            {
+                Cliente cli = new Cliente(cont, Helper.nombrealeat(), " ", Helper.aleatorio(3810000000, 3819999999));
+                Pedido ped = new Pedido(cont, " ", cli, (estado)Helper.aleatorio(4), tipoped.Express, Helper.boolaleatorio());
+                cli.Pedidos.Add(ped);
+                pedidos.Add(ped);
+                cont = cont + 1;
+            }
+            return pedidos;
+        }
+        public static List<Pedido> CrearPedidosDeli(int pednum, int cont)
+        {
+            List<Pedido> pedidos = new List<Pedido>();
+            for (int l = 0; l < pednum; l++)
+            {
+                Cliente cli = new Cliente(cont, Helper.nombrealeat(), " ", Helper.aleatorio(3810000000, 3819999999));
+                Pedido ped = new Pedido(cont, " ", cli, (estado)Helper.aleatorio(4), tipoped.Delicado, Helper.boolaleatorio());
+                cli.Pedidos.Add(ped);
                 pedidos.Add(ped);
                 cont = cont + 1;
             }
@@ -42,10 +87,21 @@ namespace TP04
             int cont = 0;
             for (int i = 0; i < num; i++)
             {
-                cadet.Cadetes.Add(new Cadete(i, Helper.nombrealeat(), " ", Helper.aleatorio(3810000000, 3819999999)));
+                cadet.Cadetes.Add(new Cadete(i, Helper.nombrealeat(), " ", Helper.aleatorio(3810000000, 3819999999),(Vehiculo)Helper.aleatorio(3)));
                 Console.WriteLine("Cuantos pedidos quiere crear para cadete " + i + "?");
                 int pednum = int.Parse(Console.ReadLine());
-                cadet.Cadetes[i].Pedidos.AddRange(CrearPedidos(pednum, cont));
+                switch (cadet.Cadetes[i].Vehi) 
+                {
+                    case Vehiculo.Bicicleta:
+                        cadet.Cadetes[i].Pedidos.AddRange(CrearPedidosEco(pednum, cont));
+                        break;
+                    case Vehiculo.Auto:
+                        cadet.Cadetes[i].Pedidos.AddRange(CrearPedidosDeli(pednum, cont));
+                        break;
+                    case Vehiculo.Moto:
+                        cadet.Cadetes[i].Pedidos.AddRange(CrearPedidosExp(pednum, cont));
+                        break;
+                }
                 cont = cont + pednum;
             }
         }
